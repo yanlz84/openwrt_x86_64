@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: pi4 OpenWrt
+name: pi4 OpenWrt Lede
 
 on:
   repository_dispatch:
