@@ -20,6 +20,11 @@
 
 #git clone https://github.com/vernesong/OpenClash.git
 #cp -R OpenClash/luci-app-openclash $GITHUB_WORKSPACE/openwrt/package
-#cd $GITHUB_WORKSPACE/openwrt/package
+
 #git clone https://github.com/yanlz84/openwrt-packages.git
-echo 'src-git yanlz84 https://github.com/yanlz84/openwrt-packages' >>feeds.conf.default
+#echo 'src-git yanlz84 https://github.com/yanlz84/openwrt-packages' >>feeds.conf.default
+echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
+echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+echo 'src-git gowebdav https://github.com/immortalwrt-collections/openwrt-gowebdav' >>feeds.conf.default
+#cd $GITHUB_WORKSPACE/openwrt/package
+#git clone https://github.com/xiaorouji/openwrt-passwall
