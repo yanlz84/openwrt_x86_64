@@ -27,4 +27,4 @@ echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 echo 'src-git gowebdav https://github.com/immortalwrt-collections/openwrt-gowebdav' >>feeds.conf.default
 cd $GITHUB_WORKSPACE/openwrt/package
-#git clone https://github.com/xiaorouji/openwrt-passwall
+git clone https://github.com/yanlz84/ddnsto
