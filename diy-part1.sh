@@ -25,6 +25,7 @@
 #echo 'src-git yanlz84 https://github.com/yanlz84/openwrt-packages' >>feeds.conf.default
 echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+echo 'src-git gowebdav https://github.com/immortalwrt-collections/openwrt-gowebdav' >>feeds.conf.default
 #echo 'src-git luci2 https://github.com/immortalwrt/luci/tree/master/applications' >>feeds.conf.default
 #echo 'src-git gowebdav https://github.com/immortalwrt-collections/openwrt-gowebdav' >>feeds.conf.default
 #cd $GITHUB_WORKSPACE/openwrt/package
