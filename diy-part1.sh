@@ -30,3 +30,5 @@ echo 'src-git gowebdav https://github.com/immortalwrt-collections/openwrt-gowebd
 #echo 'src-git gowebdav https://github.com/immortalwrt-collections/openwrt-gowebdav' >>feeds.conf.default
 #cd $GITHUB_WORKSPACE/openwrt/package
 #git clone https://github.com/yanlz84/ddnsto
+echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >>feeds.conf.default
+echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >>feeds.conf.default
