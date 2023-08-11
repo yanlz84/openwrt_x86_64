@@ -41,6 +41,22 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
+    - name: Maximize build space
+      uses: easimon/maximize-build-space@master
+      with:
+        swap-size-mb: 2048
+        remove-dotnet: 'true'
+        remove-android: 'true'
+        remove-haskell: 'true'
+        
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Build
+      run: |
+        echo "Free space:"
+        df -h
+
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
@@ -53,9 +69,6 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
-
-    - name: Free Disk Space
-      uses: ShubhamTatvamasi/free-disk-space-action@master
 
     - name: Clone source code
       working-directory: /workdir
